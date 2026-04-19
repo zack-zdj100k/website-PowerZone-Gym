@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PowerZone Gym – Premium Fitness Club</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Add the glass background */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      
+      /* Background image */
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7UnZvXD4BWYiuISE3Xf1Z722QWxqRXxthxu_tBeF&s");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Glass effect overlay */ 
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0); /* 40% opacity for glass effect */
+      backdrop-filter: blur(8px); /* Frosted glass effect */
+      z-index: -1;
+    }
+
+    /* Add padding to the content */
+    .container {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================= NAVBAR ========================= -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="PowerZone Gym Home">
+        <div class="brand-badge">PZ</div>
+        <div>
+         <br> PowerZone Gym<br><span>Premium Fitness Club</span>
+        </div>
+      </a>
+
+      <!-- CSS-only mobile menu toggle -->
+      <input class="nav-toggle" type="checkbox" id="navToggle" aria-label="Toggle navigation" />
+
+      <label class="hamburger" for="navToggle" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="about.html">About</a>
+        <a class="nav-cta" href="join.html">Join Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="kicker fade-in">
+        <i></i> <b>PowerZone</b> Elite Training Environment
+      </div>
+
+      <h1 class="fade-in delay-1">Train Hard. Stay Strong.</h1>
+      <p class="fade-in delay-2">
+        Premium equipment, professional coaching, and disciplined programming — built for adults who train with purpose.
+      </p>
+
+      <div class="btn-row fade-in delay-3" style="margin-top:18px;">
+        <a class="btn btn-primary" href="join.html">Join Now</a>
+        <a class="btn btn-outline" href="equipment.html">Explore Programs</a>
+      </div>
+
+      <div class="hero-meta fade-in delay-4">
+        <span>24/7 Access</span>
+        <span>Premium Machines</span>
+        <span>Coach-Led Programs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= WHY CHOOSE US ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <h2>Why Choose PowerZone</h2>
+          <p>Minimal distractions. Maximum results. A high-end club experience designed for serious training.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-4">
+        <article class="card fade-in delay-1">
+          <div class="card-icon">EQ</div>
+          <h3>Modern Equipment</h3>
+          <p>Commercial-grade machines and free weights maintained daily for peak performance.</p>
+        </article>
+
+        <article class="card fade-in delay-2">
+          <div class="card-icon">CO</div>
+          <h3>Expert Coaches</h3>
+          <p>Certified professionals who build strength, confidence, and consistency.</p>
+        </article>
+
+        <article class="card fade-in delay-3">
+          <div class="card-icon">NU</div>
+          <h3>Nutrition Plans</h3>
+          <p>Structured meal guidance for bulking, cutting, and clean maintenance.</p>
+        </article>
+
+        <article class="card fade-in delay-4">
+          <div class="card-icon">24</div>
+          <h3>24/7 Access</h3>
+          <p>Train when you want — early, late, or anytime in between.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= STATISTICS ========================= -->
+  <section class="section stats">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <h2>Results Backed by Numbers</h2>
+          <p>PowerZone is built around consistency, progression, and premium support.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="stat fade-in delay-1">
+          <b>1500+</b>
+          <span>Members</span>
+        </div>
+        <div class="stat fade-in delay-2">
+          <b>5</b>
+          <span>Professional Coaches</span>
+        </div>
+        <div class="stat fade-in delay-3">
+          <b>50+</b>
+          <span>Machines</span>
+        </div>
+        <div class="stat fade-in delay-4">
+          <b>10+</b>
+          <span>Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TESTIMONIALS ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div>
+          <h2>Member Testimonials</h2>
+          <p>Trusted by adults who want a premium environment and serious outcomes.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card fade-in delay-1">
+          <h3>“A real premium gym.”</h3>
+          <p>Everything feels intentional — equipment, lighting, coaching. It’s made for disciplined training.</p>
+          <div class="stars" aria-label="5 star rating">
+            <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+          </div>
+          <div class="person">
+            <div class="avatar"><img src="https://as1.ftcdn.net/jpg/05/24/37/84/1000_F_524378456_7iH4roEgy8t8351zKypjRumlIbRfwhIO.jpg" alt="Member photo"></div>
+            <div>
+              <b>Marcus R.</b><br>
+              <small>Strength Program</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="card fade-in delay-2">
+          <h3>“Coaching is elite.”</h3>
+          <p>My form improved fast. The plan was clean, progressive, and sustainable. Highly recommended.</p>
+          <div class="stars" aria-label="5 star rating">
+            <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+          </div>
+          <div class="person">
+            <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWmm_cZHrQMdT43uygJqrSmwHqTQxf4AWBA&s" alt="Member photo"></div>
+            <div>
+              <b>Emily T.</b><br>
+              <small>Strength & Endurance Program</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="card fade-in delay-3">
+          <h3>“I’ve never been stronger.”</h3>
+          <p>Joining PowerZone changed my approach to fitness. The results speak for themselves.</p>
+          <div class="stars" aria-label="5 star rating">
+            <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+          </div>
+          <div class="person">
+            <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrG2tIGVsoxQSaKFj9AmXLN6A95cnmrdhuA&s" alt="Member photo"></div>
+            <div>
+              <b>Jared W.</b><br>
+              <small>Strength Program</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

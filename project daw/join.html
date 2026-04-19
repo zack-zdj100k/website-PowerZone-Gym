@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Join – PowerZone Gym</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="PowerZone Gym Home">
+        <div class="brand-badge">PZ</div>
+        <div>
+          PowerZone Gym<br><span>Premium Fitness Club</span>
+        </div>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="navToggle" aria-label="Toggle navigation" />
+      <label class="hamburger" for="navToggle" aria-hidden="true"><span></span></label>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        
+        <a href="equipment.html">Equipment</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="about.html">About</a>
+        <a class="nav-cta" href="join.html">Join Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="fade-in">Create Your Membership</h1>
+      <p class="fade-in delay-1">Premium access. Serious training. Clean environment. Fill out the form and start strong.</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Form -->
+        <article class="card fade-in">
+          <h2 style="margin-bottom:10px;">Membership Form</h2>
+          <p style="margin-bottom:18px;"></p>
+
+          <form class="form" action="#" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" name="fullName" type="text" placeholder="e.g., Jordan Hayes" required>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="e.g., jordan@email.com" required>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="e.g., (555) 123-4567" required>
+              </div>
+
+              <div class="field">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" placeholder="e.g., 28" min="14" max="90" required>
+              </div>
+
+              <div class="field">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="goal">Fitness Goal</label>
+                <select id="goal" name="goal" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Build Muscle</option>
+                  <option>Lose Fat</option>
+                  <option>Strength & Performance</option>
+                  <option>General Fitness</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="experience">Experience Level</label>
+                <select id="experience" name="experience" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                  <option>coaching</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="notes">Notes (Optional)</label>
+                <input id="notes" name="notes" type="text" placeholder="e.g., past injuries, schedule, preferences">
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="margin-top:6px; width:100%;">Create Membership</button>
+          </form>
+        </article>
+
+        <!-- Membership Card Visual -->
+        <aside class="fade-in delay-1">
+          <div class="membership-card">
+            <div class="card-content">
+              <div class="card-top">
+                <div>
+                  <b style="letter-spacing:.8px; text-transform:uppercase;">PowerZone Member</b><br>
+                  <small style="opacity:.92;">Premium Fitness Club</small>
+                </div>
+                <div class="card-chip" aria-hidden="true"></div>
+              </div>
+
+              <div class="card-grid">
+                <div class="card-lines">
+                  <div>
+                    <small>Member Name</small>
+                    <b>Jordan Hayes</b>
+                  </div>
+                  <div>
+                    <small>Member ID</small>
+                    <b>PZ-2048-7731</b>
+                  </div>
+                  <div>
+                    <small>Join Date</small>
+                    <b>March 3, 2026</b>
+                  </div>
+                  <div>
+                    <small>Fitness Goal</small>
+                    <b>Strength & Performance</b>
+                  </div>
+                </div>
+
+                <div class="qr" aria-label="QR code placeholder">
+                  QR
+                </div>
+              </div>
+
+              <small style="opacity:.9;">Access: 24/7 • Coaching Support • Premium Floor</small>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>PowerZone Gym</h3>
+          <p>Premium fitness club built for adults who train with intent.</p>
+          <div class="social" aria-label="Social links">
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a><br>
+          <a href="equipment.html">Equipment</a><br>
+          <a href="coaches.html">Coaches</a><br>
+          <a href="nutrition.html">Nutrition</a><br>
+          <a href="emergency.html">Emergency</a><br>
+          <a href="about.html">About</a>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <small>Phone:</small><br>
+          <a href="#">+213 0774840492</a><br>
+          <small>Email:</small><br>
+          <a href="#">zacktrader100000@gmail.com</a><br>
+          <small>Location:</small><br>
+          <a href="#">constantine • ali mendjli UV5 </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span>© <b>PowerZone Gym</b>. All rights reserved.</span>
+        <span>Designed in a modern premium style.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Scroll to top">↑</a>
+
+</body>
+</html>
+
